@@ -1,0 +1,8 @@
+---
+
+- name: A playbook to install and start chrony
+  hosts: webservers
+  
+  roles:
+    - chrony
+...

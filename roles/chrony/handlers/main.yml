@@ -1,0 +1,7 @@
+---
+# handlers file for chronyi
+
+- name: restart chrony
+  service:
+    name: chronyd
+    state: restarted
