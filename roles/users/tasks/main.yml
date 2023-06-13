@@ -1,0 +1,18 @@
+---
+# tasks file for users
+
+- name: create group devops
+  ansible.builtin.group:
+    name: devops
+    state: present
+
+- name: Add the user 'johnd' with a specific uid and a primary group of 'admin'
+  ansible.builtin.user:
+    name: "{{ item }}"
+    state: present
+    group: devops
+  loop:
+    - john
+    - jarade
+    - alex
+    - rena
