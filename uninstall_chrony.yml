@@ -1,5 +1,6 @@
 ---
-
+# This playbook has been tested on CentOS 9 Stream
+#
 - name: A playbook to install and start chrony
   hosts: webservers
   
